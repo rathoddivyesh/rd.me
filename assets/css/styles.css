@@ -740,6 +740,7 @@ input:checked + .slider:before {
 .footer__icons a {
   color: var(--white);
   font-size: 1.5rem;
+  margin: 0px 15px;
 }
 
 .footer__up {
