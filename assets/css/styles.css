@@ -284,7 +284,7 @@ ul.pl-5.resume__border.mt-5 {
 
 .about__social {
   display: inline-block;
-  padding: 0px 12px;
+  padding: 0px 12px ! important;
   font-size: 1.5rem;
   color: var(--text-color);
   transition: color 0.2s ease-in-out;
