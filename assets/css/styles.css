@@ -77,15 +77,7 @@ ul.pl-5.resume__border.mt-5 {
 .d-ui-dev{
   align-items: center !important;
 }
-.section__title::after {
-  content: "";
-  position: absolute;
-  border-bottom: 4px solid var(--text-color);
-  top: 0;
-  height: 17px;
-  width: 22px;
-  margin-left: 2.2rem;
-}
+
 
 .section__title::after {
   margin-right: 15px;
