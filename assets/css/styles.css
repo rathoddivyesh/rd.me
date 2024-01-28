@@ -283,7 +283,8 @@ ul.pl-5.resume__border.mt-5 {
 }
 
 .about__social {
-  margin: 1rem 0;
+  display: inline-block;
+  padding: 0px 12px;
   font-size: 1.5rem;
   color: var(--text-color);
   transition: color 0.2s ease-in-out;
