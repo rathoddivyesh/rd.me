@@ -496,6 +496,7 @@ input:checked + .slider:before {
 }
 .mt-5, .my-5{
   margin-top: 0px !important;
+  margin-bottom: 5%;
 }
 .resume__title ul {
   list-style: none;
