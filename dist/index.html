@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="/src/" />
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--smooth scroll-->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--this links for goole fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--popin google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--this link for gsap animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!--aaaaaaaaaaaaaaaaa-->
+  </head>
+  <body style="background-color: #0e1015">
+    <header>
+      <nav class="fixed w-full top-0 left-0 z-20">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3"
+        >
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span
+              class="self-center text-2xl font-semibold glowing-text text-gray-300 sm:pl-2 md:pl-2"
+              >AZEEM</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="hamb-icon inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 mr-3"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div
+            class="mobile-menu hidden w-full md:block md:w-auto"
+            id="navbar-default"
+          >
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-10 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:mr-6 lg:mr-10 md:border-none md:bg-opacity-0 bg-gray-300"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black hover:text-white md:text-gray-200 md:bg-opacity-0 md:border-none md:hover:text-white hover:bg-gray-900 rounded-md"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black hover:text-white md:text-gray-200 md:bg-opacity-0 md:border-none md:hover:text-white hover:bg-gray-900 rounded-md"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black hover:text-white md:text-gray-200 md:bg-opacity-0 md:border-none md:hover:text-white hover:bg-gray-900 rounded-md"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black hover:text-white md:text-gray-200 md:bg-opacity-0 md:border-none md:hover:text-white hover:bg-gray-900 rounded-md"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black hover:text-white md:text-gray-200 md:bg-opacity-0 md:border-none md:hover:text-white hover:bg-gray-900 rounded-md"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="body_set">
+      <section
+        class="first-content h-screen bg-slate-500 w-screen"
+        style="background-image: url(/static/image/dfdfdfdfdfdg.png)"
+      >
+        <div class="landing-tittle flex items-center justify-center h-screen">
+          <div class="landing-container inline">
+            <div class="headding">
+              <h1
+                class="text-white text-center text-6xl sm:text-8xl md:text-9xl"
+                style="
+                  font-family: 'Anton', sans-serif;
+                  font-style: normal;
+                  font-weight: 400;
+                "
+              >
+                GRAPHIC <br />
+                DESIGNER
+              </h1>
+            </div>
+            <div
+              class="landing-img flex justify-center bottom-20 w-screen relative pt-10"
+            >
+              <img
+                src="/static/image/azeeem.webp"
+                alt=""
+                class="w-24 h-auto rounded-lg md:w-32 lg:w-36 xl:w-48 2xl:w-52 animate-bounce slow-bounce"
+              />
+            </div>
+            <div class="bottom-to-slog absolute right-0 bottom-0 w-screen">
+              <div
+                class="landing-slo w-screen md:flex justify-between md:pr-8 md:pl-8 md:pb-8"
+              >
+                <div class="div1 text-white text-center">
+                  Branding, Websites and<br />Creative Direction
+                </div>
+                <br />
+                <div class="div2 text-white text-center">
+                  Digital Design Studio<br />Based in Sri Lanka
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="first-content w-screen pt-16"
+        style="background-color: #0e1015"
+      >
+        <div class="image-gall p-5 xl:p-40 lg:p-36 md:p-28 sm:p-20">
+          <!--grid gallary section-->
+          <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
+            <!--first column gallary-->
+            <div class="grid grid-cols-1 gap-5 md:mb-24 flex justify-center">
+              <div>
+                <img
+                  class="gall-img-1 h-auto max-w-full rounded-lg"
+                  src="/static/image/gall-1.webp"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="/static/image/gall-6.webp"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="/static/image/gall-5.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <!--second column gallary-->
+            <div class="grid grid-cols-1 gap-5 md:mt-24 flex justify-center">
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="/static/image/gall-4.webp"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="/static/image/gall-2.webp"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="/static/image/gall-3.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="card-sec w-screen" style="background-color: #0e1015">
+        <div
+          class="card-heading w-screen text-4xl pr-7 pl-7 xl:text-8xl xl:pr-32 xl:pl-32 lg:text-7xl lg:pr-28 lg:pl-28 md:text-6xl md:pr-24 md:pl-24 sm:text-5xl sm:pr-20 sm:pl-20"
+        >
+          <h2
+            class="text-white"
+            style="
+              font-family: 'Anton', sans-serif;
+              font-style: normal;
+              font-weight: 200;
+            "
+          >
+            TALON IS AN AWARD-WINNING FREELANCE VISUAL DESIGNER
+          </h2>
+        </div>
+        <div class="card-sec xl:m-20 md:m-16 md:m-10 m-3 mt-7">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div>
+              <div
+                class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
+              >
+                <div class="card-top-icon w-100 flex justify-start p-4">
+                  <img src="/static/image/card-part.svg" alt="////" />
+                </div>
+                <div class="card-center-com xl:h-36 lg:h-28 md:h-32 h-28"></div>
+                <div
+                  class="card-bottom-component w-100 flex justify-between items-center p-4"
+                >
+                  <h2 class="text-white font-medium">PRODUCT<br />ANIMATION</h2>
+                  <div
+                    class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
+                  >
+                    T/01
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
+              >
+                <div class="card-top-icon w-100 flex justify-start p-4">
+                  <img src="/static/image/card-part.svg" alt="////" />
+                </div>
+                <div class="card-center-com xl:h-36 lg:h-28 md:h-32 h-28"></div>
+                <div
+                  class="card-bottom-component w-100 flex justify-between items-center p-4"
+                >
+                  <h2 class="text-white font-medium">STORE<br />ECOMMERCE</h2>
+                  <div
+                    class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
+                  >
+                    T/01
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
+              >
+                <div class="card-top-icon w-100 flex justify-start p-4">
+                  <img src="/static/image/card-part.svg" alt="////" />
+                </div>
+                <div class="card-center-com xl:h-36 lg:h-28 md:h-32 h-28"></div>
+                <div
+                  class="card-bottom-component w-100 flex justify-between items-center p-4"
+                >
+                  <h2 class="text-white font-medium">GRAPHIC<br />DESIGN</h2>
+                  <div
+                    class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
+                  >
+                    T/01
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
+              >
+                <div class="card-top-icon w-100 flex justify-start p-4">
+                  <img src="/static/image/card-part.svg" alt="////" />
+                </div>
+                <div class="card-center-com xl:h-36 lg:h-28 md:h-32 h-28"></div>
+                <div
+                  class="card-bottom-component w-100 flex justify-between items-center p-4"
+                >
+                  <h2 class="text-white font-medium">
+                    WEBSITE<br />DEVELOPMENT
+                  </h2>
+                  <div
+                    class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
+                  >
+                    T/01
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
+              >
+                <div class="card-top-icon w-100 flex justify-start p-4">
+                  <img src="/static/image/card-part.svg" alt="////" />
+                </div>
+                <div class="card-center-com xl:h-36 lg:h-28 md:h-32 h-28"></div>
+                <div
+                  class="card-bottom-component w-100 flex justify-between items-center p-4"
+                >
+                  <h2 class="text-white font-medium">COPY<br />CREATION</h2>
+                  <div
+                    class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
+                  >
+                    T/01
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
+              >
+                <div class="card-top-icon w-100 flex justify-start p-4">
+                  <img src="/static/image/card-part.svg" alt="////" />
+                </div>
+                <div class="card-center-com xl:h-36 lg:h-28 md:h-32 h-28"></div>
+                <div
+                  class="card-bottom-component w-100 flex justify-between items-center p-4"
+                >
+                  <h2 class="text-white font-medium">USER<br />INTERFACE</h2>
+                  <div
+                    class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
+                  >
+                    T/01
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="branding w-screen mt-16"
+        style="background-color: #0e1015"
+      >
+        <div
+          class="branding-heading text-white"
+          style="
+            font-family: 'Anton', sans-serif;
+            font-style: normal;
+            font-weight: 200;
+          "
+        >
+          <h2 class="ml-5 md:ml-10 xl:ml-14 text-left font-size-in-vh">
+            BRANDING
+          </h2>
+          <h2 class="ml-16 md:ml-36 xl:ml-40 font-size-in-vh">EXPERIENCE</h2>
+        </div>
+        <div class="brading-para text-white">
+          <p class="text-center mt-12 text-sm">
+            Check out our recent design,<br />
+            strategy, and development for<br />
+            real-world projects.
+          </p>
+        </div>
+        <div class="branding-gallary mt-7">
+          <div class="grid grid-cols-5 gap-2 xl:gap-6 md:gap-4">
+            <!--colum 1 -->
+            <div class="col1">
+              <div class="mb-2 xl:mb-6 md:mb-4">
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="/static/image/image11.webp"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="/static/image/image12.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- column 2-->
+            <div class="col2 mt-10 xl:mt-24 md:mt-20">
+              <div class="mb-2 xl:mb-6 md:mb-4">
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="/static/image/image21.webp"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="/static/image/image22.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!--column 3-->
+            <div class="col1 mt-20 xl:mt-44 md:mt-40">
+              <div class="mb-2 xl:mb-6 md:mb-4">
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="/static/image/image31.webp"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="/static/image/image32.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!--column 4-->
+            <div class="col1 mt-10 xl:mt-24 md:mt-20">
+              <div class="mb-2 xl:mb-6 md:mb-4">
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="/static/image/image41.webp"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="/static/image/image43.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!--column 5-->
+            <div class="col1">
+              <div class="mb-2 xl:mb-6 md:mb-4">
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="/static/image/image51.webp"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg"
+                  src="/static/image/image52.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="banner-rolling w-screen pb-32 text-white"
+        style="
+          font-family: 'Anton', sans-serif;
+          font-style: normal;
+          font-weight: 200;
+        "
+      >
+        <div
+          class="rolling-banners mt-28 border border-r-0 border-l-0 p-1 sm:p-2"
+        >
+          <div class="scroller" data-speed="fast">
+            <ul
+              class="tag-list scroller__inner xl:text-6xl xl:p-5 lg:text-5xl lg:p-4 md:text-4xl md:p-3 sm:text-3xl sm:p-2 p-1 text-xl"
+            >
+              <li class="pr-10 flex justify-center items-center">WEB DESIGN</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="/static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">ANIMATION</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="/static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">BRANDING</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="/static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">DESIGN</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="/static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">
+                LOGO DESIGN
+              </li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="/static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">
+                SOCIAL MEDIA POSTS
+              </li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="/static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">UI/UX</li>
+            </ul>
+          </div>
+        </div>
+        <!--this script for horizontal keyframe scrolling-->
+        <script src="/src/scroll_keyframe.js"></script>
+
+        <div class="rolling-banners border border-r-0 border-l-0 p-1 sm:p-2">
+          <div class="scroller1" data-speed="fast">
+            <ul
+              class="tag-list scroller__inner1 xl:text-6xl xl:p-5 lg:text-5xl lg:p-4 md:text-4xl md:p-3 sm:text-3xl sm:p-2 p-1 text-xl"
+            >
+              <li class="pr-10 flex justify-center items-center">MARKERTING</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="/static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">
+                STORY TELLING
+              </li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="/static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">
+                USER EXPERIENCE
+              </li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="/static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">MOTION</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="/static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">
+                USER EXPERIENCE
+              </li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="/static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">BRANDING</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="/static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">MOTION</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="/static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+            </ul>
+          </div>
+          <!--this script for horizontal keyframe scrolling-->
+          <script src="/src/scrol_keyframe2.js"></script>
+        </div>
+
+        <!--this script for horizontal keyframe scrolling-->
+        <script src="/src/scroll_keyframe.js"></script>
+      </section>
+
+      <!--this script for smooth scrolling-->
+      <script src="/src/smothscroll.js">
+        //for smoth scrolling
+      </script>
+
+      <section class="bottom-card w-screen">
+        <div class="card-div p-5 xl:p-10">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <!--first bootom card section-->
+            <div
+              class="bottom-card-sec p-5 bg-gray-700 bg-opacity-50 rounded-xl glowing-card"
+            >
+              <div class="card-start">
+                <img class="rounded-xl" src="/static/image/card1.jpeg" alt="" />
+              </div>
+              <div
+                class="card-title text-white poppins-bold text-gray-500 mt-4 text-lg"
+              >
+                <h2>WHAT DO YOU NEED TO START ON YOUR CAREER?</h2>
+              </div>
+              <div
+                class="card-footer text-gray-500 flex justify-between poppins-medium mt-5"
+              >
+                <h3>AZEEM AHAMED</h3>
+                <h3>NOV 29</h3>
+              </div>
+            </div>
+            <!--second card-->
+            <div
+              class="bottom-card-sec p-5 bg-gray-700 bg-opacity-50 rounded-xl glowing-card"
+            >
+              <div class="card-start">
+                <img class="rounded-xl" src="/static/image/card2.jpeg" alt="" />
+              </div>
+              <div
+                class="card-title text-white poppins-bold text-gray-500 mt-4 text-lg"
+              >
+                <h2>WHAT DO YOU NEED TO START ON YOUR CAREER?</h2>
+              </div>
+              <div
+                class="card-footer text-gray-500 flex justify-between poppins-medium mt-5"
+              >
+                <h3>AZEEM AHAMED</h3>
+                <h3>NOV 29</h3>
+              </div>
+            </div>
+            <!--third card-->
+            <div
+              class="bottom-card-sec p-5 bg-gray-700 bg-opacity-50 rounded-xl glowing-card"
+            >
+              <div class="card-start">
+                <img class="rounded-xl" src="/static/image/card3.jpeg" alt="" />
+              </div>
+              <div
+                class="card-title text-white poppins-bold text-gray-500 mt-4 text-lg"
+              >
+                <h2>WHAT DO YOU NEED TO START ON YOUR CAREER?</h2>
+              </div>
+              <div
+                class="card-footer text-gray-500 flex justify-between poppins-medium mt-5"
+              >
+                <h3>AZEEM AHAMED</h3>
+                <h3>NOV 29</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lets-talk w-screen h-screen p-5">
+        <div class="div-heading-sec-letstalk text-white mt-10">
+          <p class="lets-talk-custom anton-xl text-max-size text-center">
+            LET'S TALK
+          </p>
+        </div>
+        <div class="rotating-img">
+          <div class="for-absolute">
+            <div
+              class="star-icon-rotate flex justify-center"
+              style="width: 100%"
+            >
+              <img
+                src="/static/image/star-2.svg"
+                alt=""
+                class="animate-spin slow-spin h-28 sm:h-36 md:h-40 lg:h-52 xl:h-60"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="lets-talk-bottom mt-10 md:pr-7 md:pl-7">
+          <div
+            class="text-white md:flex md:justify-between text-center poppins-medium"
+          >
+            <p>START APROJECT<br />AATHILDUCKY@GMAIL.COM<br />(075)644-4633</p>
+            <p class="mt-5">
+              MANCHOLAI STREET.<br />ALLENTOWN, NEW<br />KINNIYA 31100
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="md:mt-32">
+      <div class="footer-nav-bar md:pr-10 md:pl-10 mt-20 mb-10 text-sm">
+        <div class="footer-nav text-white md:flex md:justify-between">
+          <div class="div1 poppins-medium text-center md:text-left mb-10">
+            <a href="#" class="glowing-text">POWERED BY AZEEM</a>
+          </div>
+          <div class="div2 poppins-medium text-center md:flex">
+            <div class="pr-2 pl-2 pb-2 glowing-text">
+              <a href="#" class="glowing-text">STYLE GUIDE</a>
+            </div>
+            <div class="pr-2 pl-2 pb-2 glowing-text">
+              <a href="#">LICENSES</a>
+            </div>
+            <div class="pr-2 pl-2 pb-2 glowing-text">
+              <a href="#">CHANGELOG</a>
+            </div>
+            <div class="pr-2 pl-2 pb-2 glowing-text">
+              <a href="#">SUPPORT</a>
+            </div>
+          </div>
+          <div
+            class="div3 poppins-medium text-center md:text-left mt-10 md:mt-0"
+          >
+            <a href="#" class="glowing-text">©AATHIL DUCKY</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $(".hamb-icon").click(function () {
+          $(".mobile-menu").slideToggle();
+        });
+      });
+    </script>
+  </body>
+</html>
