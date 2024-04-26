@@ -12,7 +12,6 @@
 }
 }
 @media (min-width: 768px) {
-<style>
     .md\:mt-32 {
         margin-top: 0rem !important;
     }
