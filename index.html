@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Divyesh - UI/UX Designer</title>
+    <title>Divyesh - Graphic Designer</title>
     <link rel="stylesheet" href="src/output.css" />
     <link rel="stylesheet" href="src" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" type="image/x-icon" href="static/Frame 175.png">
+    <link rel="icon" type="image/x-icon" href="static/20592-NSPIZ4.gif">
     <!--this links for goole fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -90,12 +90,18 @@
               class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-10 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:mr-6 lg:mr-10 md:border-none md:bg-opacity-0 bg-gray-300"
             >
               
-              
+            <li>
+              <a
+                href="static/Portfolio.pdf" 
+                class="block py-2 px-3 text-black hover:text-white md:text-gray-200 md:bg-opacity-0 md:border-none md:hover:text-white hover:bg-gray-900 rounded-md"
+                download="Divyesh-Portfolio-Work.pdf" target="_blank">Portfolio</a
+              >
+            </li>
               <li>
                 <a
                   href="static/Divyesh-Rathod.pdf" 
                   class="block py-2 px-3 text-black hover:text-white md:text-gray-200 md:bg-opacity-0 md:border-none md:hover:text-white hover:bg-gray-900 rounded-md"
-                  download="Divyesh-Rathod.pdf">Resume</a
+                  download="Divyesh-Rathod.pdf" target="_blank">Resume</a
                 >
               </li>
               <li>
@@ -109,7 +115,7 @@
                 <a
                   href="#contact-id"
                   class="block py-2 px-3 text-black hover:text-white md:text-gray-200 md:bg-opacity-0 md:border-none md:hover:text-white hover:bg-gray-900 rounded-md"
-                  >Contact</a
+                  >Let's Talk</a
                 >
               </li>
             </ul>
@@ -134,7 +140,7 @@
 
                 "
               >
-                UI/UX & GRAPHIC  <br />
+                GRAPHIC  <br />
                 DESIGNER
               </h1>
             </div>
@@ -144,14 +150,11 @@
                 class="landing-slo w-screen md:flex justify-between md:pr-8 md:pl-8 md:pb-8"
               >
                 <div class="div1 text-white text-center">
-                  Visual Design, Branding, UI/UX and<br />Creative Direction
+                  Visual Design, Branding, and<br />Creative Direction
                 </div>
                 <br />
                 <div class="div1 text-white text-center">
-                  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1Ivs-_9O-7ubvqaKotOdKRWQ6PXjNkAx-?usp=sharing">
-                  Take a Portfolio <br />Work Tour 🡪</a>
-                </div> -->
-                <br />
+                  
                 <div class="div2 text-white text-center">
                    Designer<br />Based in Gujarat, India
                 </div>
@@ -160,99 +163,118 @@
           </div>
         </div>
       </section>
-      <section
-        class="first-content w-screen pt-16"
-        style="background-color: #0e1015"
-      >
-      <div class="brading-para text-white">
-        <p class="text-center mt-12 text-sm" style="font-size: 30px;font-weight: bold;">
-          Portfolio
-        </p>
-      </div>
-        <div class="image-gall p-5 xl:p-40 lg:p-36 md:p-28 sm:p-20" style="padding-top: 90px;padding-bottom: 50px;">
-          <!--grid gallary section-->
+
+      <!-- PORTFOLIO NEW -->
+       <div class="portfolionew">
+        <div class="portfolionewchild">
+          <div class="tab">
+            <button class="tablinks active" onclick="openCity(event, 'all')">All</button>
+            <button class="tablinks" onclick="openCity(event, 'pf_logo')">Logo Design</button>
+            <button class="tablinks" onclick="openCity(event, 'pf_social_media')">Social Media Post</button>
+            <button class="tablinks" onclick="openCity(event, 'pf_poster')">Packaging Design</button>
+            <button class="tablinks" onclick="openCity(event, 'pf_yt')">Youtube Thumbnail</button>
+          </div>
           
-          <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
-            <!--first column gallary-->
-            <div class="grid grid-cols-1 gap-5 md:mb-24 flex justify-center">
-              <div>
-                <img
-                  class="gall-img-1 h-auto max-w-full rounded-lg"
-                  src="static/image/Dashboard1.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  class="h-auto max-w-full rounded-lg"
-                  src="static/image/Layout 2.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  class="h-auto max-w-full rounded-lg"
-                  src="static/image/gall-5.webp"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  class="h-auto max-w-full rounded-lg"
-                  src="static/image/pizza.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <!--first column gallary-->
-            <div class="grid grid-cols-1 gap-5 md:mb-24 flex justify-center">
-              <div>
-                <img
-                  class="gall-img-1 h-auto max-w-full rounded-lg"
-                  src="static/image/nike2.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  class="h-auto max-w-full rounded-lg"
-                  src="static/image/Cricktracker.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  class="h-auto max-w-full rounded-lg"
-                  src="static/image/Graphic1.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  class="h-auto max-w-full rounded-lg"
-                  src="static/image/gall-6.webp"
-                  alt=""
-                />
+          <div id="all" class="tabcontent" style="display: block;">
+            <div class="item-content" style="margin-top: 5%;">
+              <div class="item-child">
+                <div class="item">
+                  <img src="static/Work/Packaging1.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="static/Work/Social4.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="static/Work/Social5.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="static/Work/Logo1.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="static/Work/Logo2.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="static/Work/Logo3.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="static/Work/Social1.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="static/Work/Social2.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="static/Work/Social3.png" alt="">
+                </div>
               </div>
             </div>
           </div>
-          <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1Ivs-_9O-7ubvqaKotOdKRWQ6PXjNkAx-?usp=sharing" class="div2 text-white text-center" style="font-size: 15px;
-          text-transform: uppercase;
-          font-weight: 600;
-          margin-top: 5%;
-          text-align: center;
-          width: 100%;
-          display: inline-block;">
-            Explore More Portfolio Work 🡪
-         </a> -->
+    
+          <div id="pf_logo" class="tabcontent">
+            <div class="item-content" style="margin-top: 5%;">
+              <div class="item-child">
+                <div class="item">
+                  <img src="static/Work/Logo1.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="static/Work/Logo2.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="static/Work/Logo3.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="pf_social_media" class="tabcontent">
+            <div class="item-content" style="margin-top: 5%;">
+              <div class="item-child">
+                <div class="item">
+                  <img src="static/Work/Social1.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="static/Work/Social2.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="static/Work/Social3.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="static/Work/Social4.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="static/Work/Social5.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="pf_poster" class="tabcontent">
+            <div class="item-content" style="margin-top: 5%;">
+              <div class="item-child">
+                <div class="item">
+                  <img src="static/Work/Packaging1.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="pf_yt" class="tabcontent">
+            <div class="item-content" style="margin-top: 5%;">
+              <div class="item-child">
+                <div class="item">
+                  <img src="static/image/card2.jpeg" alt="">
+                </div>
+              </div>
+            </div>  
+          </div>
         </div>
-      </section>
+      </div>
+          
       
    
       
-      <section
+      <section 
         class="first-content w-screen pt-16"
-        style="background-color: #0e1015"
+        style="background-color: #0e1015;display: inline-block;margin-top: 3%;"
       >
       `
       </section>
@@ -270,7 +292,7 @@
               text-align: center;
             "
           >
-            DIVYESH IS AN AWARD-WINNING UI/UX DESIGNER
+            DIVYESH IS AN AWARD-WINNING DESIGNER
           </h2>
         </div>
         <div class="card-sec xl:m-20 md:m-16 md:m-10 m-3 mt-7" id="services-id" style="padding-top: 5%;">
@@ -287,62 +309,11 @@
                   JUSTIFY-CONTENT: CENTER;
                   ALIGN-ITEMS: center;
                   FONT-SIZE: 35PX;
-                  FONT-WEIGHT: BOLDER;">UI/UX <br />DESIGN</h2></div>
-                <div
-                  class="card-bottom-component w-100 flex justify-between items-center p-4"
-                >
-                  <h2 class="text-white font-medium">UI/UX <br />DESIGN</h2>
-                  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1Ivs-_9O-7ubvqaKotOdKRWQ6PXjNkAx-?usp=drive_link"
-                    class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
-                  >
-                    Explore Work
-                  </a> -->
-                </div>
-              </div>
-            </div>
-            <div>
-              <div
-                class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
-              >
-                <div class="card-top-icon w-100 flex justify-start p-4">
-                  <img src="static/image/card-part.svg" alt="////" />
-                </div>
-                <div class="card-center-com xl:h-36 lg:h-28 md:h-32 h-28"><h2 class="text-white font-medium" style="TEXT-ALIGN: CENTER;
-                  DISPLAY: FLEX;
-                  JUSTIFY-CONTENT: CENTER;
-                  ALIGN-ITEMS: center;
-                  FONT-SIZE: 35PX;
                   FONT-WEIGHT: BOLDER;">GRAPHIC <br />DESIGN</h2></div>
                 <div
                   class="card-bottom-component w-100 flex justify-between items-center p-4"
                 >
-                  <h2 class="text-white font-medium">GRAPHIC<br />DESIGN</h2>
-                  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1Ivs-_9O-7ubvqaKotOdKRWQ6PXjNkAx-?usp=drive_link"
-                    class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
-                  >
-                  Explore Work
-                  </a> -->
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <div
-                class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
-              >
-                <div class="card-top-icon w-100 flex justify-start p-4">
-                  <img src="static/image/card-part.svg" alt="////" />
-                </div>
-                <div class="card-center-com xl:h-36 lg:h-28 md:h-32 h-28"><h2 class="text-white font-medium" style="TEXT-ALIGN: CENTER;
-                  DISPLAY: FLEX;
-                  JUSTIFY-CONTENT: CENTER;
-                  ALIGN-ITEMS: center;
-                  FONT-SIZE: 35PX;
-                  FONT-WEIGHT: BOLDER;">POSTER <br />DESIGN</h2></div>
-                <div
-                  class="card-bottom-component w-100 flex justify-between items-center p-4"
-                >
-                  <h2 class="text-white font-medium">POSTER<br />DESIGN</h2>
+                  <h2 class="text-white font-medium">GRAPHIC <br />DESIGN</h2>
                   <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1Ivs-_9O-7ubvqaKotOdKRWQ6PXjNkAx-?usp=drive_link"
                     class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
                   >
@@ -371,11 +342,12 @@
                   <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1Ivs-_9O-7ubvqaKotOdKRWQ6PXjNkAx-?usp=drive_link"
                     class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
                   >
-                    Explore Work
+                  Explore Work
                   </a> -->
                 </div>
               </div>
             </div>
+            
             <div>
               <div
                 class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
@@ -388,11 +360,11 @@
                   JUSTIFY-CONTENT: CENTER;
                   ALIGN-ITEMS: center;
                   FONT-SIZE: 35PX;
-                  FONT-WEIGHT: BOLDER;">PRODUCT <br />BRANDING</h2></div>
+                  FONT-WEIGHT: BOLDER;">PACKAGING <br />DESIGN</h2></div>
                 <div
                   class="card-bottom-component w-100 flex justify-between items-center p-4"
                 >
-                  <h2 class="text-white font-medium">PRODUCT<br />BRANDING</h2>
+                  <h2 class="text-white font-medium">PACKAGING<br />DESIGN</h2>
                   <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1Ivs-_9O-7ubvqaKotOdKRWQ6PXjNkAx-?usp=drive_link"
                     class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
                   >
@@ -413,11 +385,61 @@
                   JUSTIFY-CONTENT: CENTER;
                   ALIGN-ITEMS: center;
                   FONT-SIZE: 35PX;
-                  FONT-WEIGHT: BOLDER;">VIDEO <br />EDITING</h2></div>
+                  FONT-WEIGHT: BOLDER;">SOCIAL MEDIA <br />POST</h2></div>
                 <div
                   class="card-bottom-component w-100 flex justify-between items-center p-4"
                 >
-                  <h2 class="text-white font-medium">VIDEO<br />EDITING</h2>
+                  <h2 class="text-white font-medium">SOCIAL MEDIA<br />POST</h2>
+                  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1Ivs-_9O-7ubvqaKotOdKRWQ6PXjNkAx-?usp=drive_link"
+                    class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
+                  >
+                    Explore Work
+                  </a> -->
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
+              >
+                <div class="card-top-icon w-100 flex justify-start p-4">
+                  <img src="static/image/card-part.svg" alt="////" />
+                </div>
+                <div class="card-center-com xl:h-36 lg:h-28 md:h-32 h-28"><h2 class="text-white font-medium" style="TEXT-ALIGN: CENTER;
+                  DISPLAY: FLEX;
+                  JUSTIFY-CONTENT: CENTER;
+                  ALIGN-ITEMS: center;
+                  FONT-SIZE: 35PX;
+                  FONT-WEIGHT: BOLDER;">YOUTUBE <br />THUMBNAIL</h2></div>
+                <div
+                  class="card-bottom-component w-100 flex justify-between items-center p-4"
+                >
+                  <h2 class="text-white font-medium">YOUTUBE<br />THUMBNAIL</h2>
+                  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1Ivs-_9O-7ubvqaKotOdKRWQ6PXjNkAx-?usp=drive_link"
+                    class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
+                  >
+                    Explore Work
+                  </a> -->
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
+              >
+                <div class="card-top-icon w-100 flex justify-start p-4">
+                  <img src="static/image/card-part.svg" alt="////" />
+                </div>
+                <div class="card-center-com xl:h-36 lg:h-28 md:h-32 h-28"><h2 class="text-white font-medium" style="TEXT-ALIGN: CENTER;
+                  DISPLAY: FLEX;
+                  JUSTIFY-CONTENT: CENTER;
+                  ALIGN-ITEMS: center;
+                  FONT-SIZE: 35PX;
+                  FONT-WEIGHT: BOLDER;">POSTER <br />DESIGN</h2></div>
+                <div
+                  class="card-bottom-component w-100 flex justify-between items-center p-4"
+                >
+                  <h2 class="text-white font-medium">POSTER<br />DESIGN</h2>
                   <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1Ivs-_9O-7ubvqaKotOdKRWQ6PXjNkAx-?usp=drive_link"
                     class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
                   >
@@ -451,34 +473,28 @@
             <ul
               class="tag-list scroller__inner xl:text-6xl xl:p-5 lg:text-5xl lg:p-4 md:text-4xl md:p-3 sm:text-3xl sm:p-2 p-1 text-xl"
             >
-            <li class="pr-10 flex justify-center items-center">
-              <img
-                class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
-                src="static/image/dsddsdfdfsd.svg"
-              />
-            </li>
-              <li class="pr-10 flex justify-center items-center">WEB DESIGN</li>
+              
               <li class="pr-10 flex justify-center items-center">
                 <img
                   class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
                   src="static/image/dsddsdfdfsd.svg"
                 />
               </li>
-              <li class="pr-10 flex justify-center items-center">APP DESIGN</li>
+              <li class="pr-10 flex justify-center items-center">POSTER DESIGN</li>
               <li class="pr-10 flex justify-center items-center">
                 <img
                   class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
                   src="static/image/dsddsdfdfsd.svg"
                 />
               </li>
-              <li class="pr-10 flex justify-center items-center">BRANDING</li>
+              <li class="pr-10 flex justify-center items-center">PACKAGING DESIGN</li>
               <li class="pr-10 flex justify-center items-center">
                 <img
                   class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
                   src="static/image/dsddsdfdfsd.svg"
                 />
-              </li>
-              <li class="pr-10 flex justify-center items-center">UI/UX DESIGN</li>
+              </li>              
+              <li class="pr-10 flex justify-center items-center">LOGO DESIGN</li>
               <li class="pr-10 flex justify-center items-center">
                 <img
                   class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
@@ -486,8 +502,15 @@
                 />
               </li>
               <li class="pr-10 flex justify-center items-center">
-                LOGO DESIGN
+                VISUAL DESIGN
               </li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">PACKAGING DESIGN</li>
               <li class="pr-10 flex justify-center items-center">
                 <img
                   class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
@@ -517,7 +540,7 @@
                   src="static/image/dsddsdfdfsd.svg"
                 />
               </li>
-              <li class="pr-10 flex justify-center items-center">FLYER DESIGN</li>
+              <li class="pr-10 flex justify-center items-center">YOUTUBE THUMBNAIL DESIGN</li>
               <li class="pr-10 flex justify-center items-center">
                 <img
                   class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
@@ -565,7 +588,14 @@
                   src="static/image/dsddsdfdfsd.svg"
                 />
               </li>
-              <li class="pr-10 flex justify-center items-center">CANVA</li>
+              <li class="pr-10 flex justify-center items-center">ADOBE ILLUSTRATOR</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">ADOBE PREMIER PRO</li>
             </ul>
           </div>
 
@@ -710,7 +740,7 @@
           style='padding-top:30px; padding-bottom:35px'>
             <p>START A PROJECT<br />DIVYESHR312@GMAIL.COM<br />8320072230</p>
             <p style='padding-top: 20px;
-    padding-bottom: 5px;'>OPEN TO WORK INVOLVING <br />UI/UX, VISUALS, GRAPHIC DESIGN, PRODUCT BRANDING</p>
+    padding-bottom: 5px;'>OPEN TO WORK INVOLVING <br />GRAPHICS, POSTER DESIGN, LOGO DESIGN, PACKAGING<br />SOCIAL MEDIA POST, YOUTUBE THUMBNAIL</p>
             <p class="mt-5">
               SURAT, GUJARAT<br />INDIA
             </p>
@@ -753,5 +783,20 @@
       
 
     </script>
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
   </body>
 </html>
