@@ -145,4 +145,11 @@
 .item-side{
   display: none;
 }
+    .landing-slo.w-screen.md\:flex.justify-between.md\:pr-8.md\:pl-8.md\:pb-8
+    {
+      padding-bottom:10%;
+    }
+    .landing-container.inline {
+    margin-top: -10%;
+}
 }
