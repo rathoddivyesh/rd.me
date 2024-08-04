@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divyesh - Graphic Designer</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="src" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--smooth scroll-->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="static/20592-NSPIZ4.gif">
+    <!--this links for goole fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--popin google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--this link for gsap animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!--aaaaaaaaaaaaaaaaa-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="src/jquery/dist/jquery.min.js"></script>
+    <script src="src/for_gsap.js"></script>
+    <script src="src/scrol_keyframe2.js"></script>
+    <script src="src/scroll_keyframe2.js"></script>
+    <script src="src/smoothscroll.js"></script>
+    <link rel="stylesheet" href="src/custom.css">
+  </head>
+  <body style="background-color: #0e1015;overflow-x: hidden;">
+    <header>
+      <nav class="fixed w-full top-0 left-0 z-20">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3"
+        >
+          <a href="https://rathoddivyesh.github.io/rd.me/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span style="padding-top: 6%;"
+              class="self-center text-2xl font-semibold glowing-text text-gray-300 sm:pl-2 md:pl-2"
+              ><img src="https://see.fontimg.com/api/renderfont4/lg1GX/eyJyIjoiZnMiLCJoIjoxMDgsInciOjE1MDAsImZzIjo3MiwiZmdjIjoiI0ZEM0YzRiIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/RGl2eWVzaA/gruffly-regular.png" alt="" style="width: 60%;"></span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="hamb-icon inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 mr-3"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div
+            class="mobile-menu hidden w-full md:block md:w-auto"
+            id="navbar-default"
+          >
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-10 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:mr-6 lg:mr-10 md:border-none md:bg-opacity-0 bg-gray-300"
+            >
+              
+            <li>
+              <a
+                href="static/Portfolio.pdf" 
+                class="block py-2 px-3 text-black hover:text-white md:text-gray-200 md:bg-opacity-0 md:border-none md:hover:text-white hover:bg-gray-900 rounded-md"
+                download="Divyesh-Portfolio-Work.pdf" target="_blank">Portfolio</a
+              >
+            </li>
+              <li>
+                <a
+                  href="static/Divyesh-Rathod.pdf" 
+                  class="block py-2 px-3 text-black hover:text-white md:text-gray-200 md:bg-opacity-0 md:border-none md:hover:text-white hover:bg-gray-900 rounded-md"
+                  download="Divyesh-Rathod.pdf" target="_blank">Resume</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services-id"
+                  class="block py-2 px-3 text-black hover:text-white md:text-gray-200 md:bg-opacity-0 md:border-none md:hover:text-white hover:bg-gray-900 rounded-md"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact-id"
+                  class="block py-2 px-3 text-black hover:text-white md:text-gray-200 md:bg-opacity-0 md:border-none md:hover:text-white hover:bg-gray-900 rounded-md"
+                  >Let's Talk</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="body_set">
+      <section
+        class="first-content h-screen bg-slate-500 w-screen"
+        style="background-image: url(static/image/dfdfdfdfdfdg.png)"
+      >
+        <div class="landing-tittle flex items-center justify-center h-screen">
+          <div class="landing-container inline">
+            <div class="headding">
+              <h1
+                class="text-white text-center text-6xl sm:text-8xl md:text-9xl"
+                style="
+                  font-family: 'Anton', sans-serif;
+                  font-style: normal;
+                  font-weight: 400;
+
+                "
+              >
+                GRAPHIC  <br />
+                DESIGNER
+              </h1>
+            </div>
+            
+            <div class="bottom-to-slog absolute right-0 bottom-0 w-screen">
+              <div
+                class="landing-slo w-screen md:flex justify-between md:pr-8 md:pl-8 md:pb-8"
+              >
+                <div class="div1 text-white text-center">
+                  Visual Design, Branding, and<br />Creative Direction
+                </div>
+                <br />
+                <div class="div1 text-white text-center">
+                  
+                <div class="div2 text-white text-center">
+                   Designer<br />Based in Gujarat, India
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO NEW -->
+       <div class="portfolionew">
+        <div class="portfolionewchild">
+          <div class="tab">
+            <button class="tablinks active" onclick="openCity(event, 'all')">All</button>
+            <button class="tablinks" onclick="openCity(event, 'pf_logo')">Logo Design</button>
+            <button class="tablinks" onclick="openCity(event, 'pf_social_media')">Social Media Post</button>
+            <button class="tablinks" onclick="openCity(event, 'pf_poster')">Packaging Design</button>
+          </div>
+          
+          <div id="all" class="tabcontent" style="display: block;">
+            <div class="item-content" style="margin-top: 5%;">
+              <div class="item-child">
+                <div class="item">
+                  <img src="static/image/a1.png" alt="">
+                </div>
+              </div>
+              <div class="item-child-side">
+                <div class="item-side">
+                  <h2>Social Media Post Design | Euro Foods Pvt Ltd.</h2>
+                  <h3>For the Eurofoods social media campaign, I designed a visually compelling and engaging post that effectively captures the brand's essence and communicates its key messages.<br><br><br>
+
+                    The project involved creating a dynamic layout that aligns with Eurofoods' aesthetic, incorporating high-quality images of their products to highlight their freshness and appeal.<br><br><br>
+                  
+                    <a href="#">See It All 🡥</a>
+                </div>
+              </div>
+            </div>
+            <div class="item-content" style="margin-top: 5%;">
+              <div class="item-child-side-lt">
+                <div class="item-side">
+                  <h2>Packaging Design | Raja Supari Palace</h2>
+                  <h3>The packaging aims to evoke a sense of heritage and authenticity while appealing to a modern audience.<br><br><br>
+
+                    Key design elements include intricate patterns, rich colors, and high-quality imagery.
+                    The packaging is designed to capture the essence of Indian flavors and create a premium product image.<br><br><br>
+                    
+                   </h3>
+                    <a href="#">See It All 🡥</a>
+                </div>
+              </div>
+              <div class="item-child">
+                <div class="item">
+                  <img src="static/image/w7.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="item-content" style="margin-top: 5%;">
+              <div class="item-child">
+                <div class="item">
+                  <img src="static/image/w1.png" alt="">
+                </div>
+              </div>
+              <div class="item-child-side">
+                <div class="item-side">
+                  <h2>Logo Design | Coriander Cup</h2>
+                  <h3>Delivered a compelling logo that perfectly captures the essence of a modern, yet cozy coffee shop. The design effectively targets young professionals and students by combining clean lines with subtle coffee-inspired elements.<br><br><br>
+                    
+                    The logo's warm color palette and contemporary typography create a strong, memorable brand identity. Successfully met client expectations by delivering a versatile design that can be seamlessly integrated across various marketing platforms.<br><br><br>
+                  
+                    <a href="#">See It All 🡥</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div id="pf_logo" class="tabcontent">
+            <div class="item-content" style="margin-top: 5%;">
+              <div class="item-child">
+                <div class="item">
+                  <img src="static/image/w1.png" alt="">
+                </div>
+              </div>
+              <div class="item-child-side">
+                <div class="item-side">
+                  <h2>Logo Design | Coriander Cup</h2>
+                  <h3>Delivered a compelling logo that perfectly captures the essence of a modern, yet cozy coffee shop. The design effectively targets young professionals and students by combining clean lines with subtle coffee-inspired elements.<br><br><br>
+                    
+                    The logo's warm color palette and contemporary typography create a strong, memorable brand identity. Successfully met client expectations by delivering a versatile design that can be seamlessly integrated across various marketing platforms.<br><br><br>
+                  
+                   <a href="#">See It All 🡥</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="pf_social_media" class="tabcontent">
+            <div class="item-content" style="margin-top: 5%;">
+              <div class="item-child">
+                <div class="item">
+                  <img src="static/image/a1.png" alt="">
+                </div>
+              </div>
+              <div class="item-child-side">
+                <div class="item-side">
+                  <h2>Social Media Post Design | Euro Foods Pvt Ltd.</h2>
+                  <h3>For the Eurofoods social media campaign, I designed a visually compelling and engaging post that effectively captures the brand's essence and communicates its key messages.<br><br><br>
+
+                    The project involved creating a dynamic layout that aligns with Eurofoods' aesthetic, incorporating high-quality images of their products to highlight their freshness and appeal.<br><br><br>
+                  
+                    <a href="#">See It All 🡥</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="pf_poster" class="tabcontent">
+            <div class="item-content" style="margin-top: 5%;">
+              <div class="item-child-side-lt">
+                <div class="item-side">
+                  <h2>Packaging Design | Raja Supari Palace</h2>
+                  <h3>The packaging aims to evoke a sense of heritage and authenticity while appealing to a modern audience.<br><br><br>
+
+                    Key design elements include intricate patterns, rich colors, and high-quality imagery.
+                    The packaging is designed to capture the essence of Indian flavors and create a premium product image.<br><br><br>
+                    
+                    </h3>
+                    <a href="#">See It All 🡥</a>
+                </div>
+              </div>
+              <div class="item-child">
+                <div class="item">
+                  <img src="static/image/w7.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          
+      
+   
+      
+      <section 
+        class="first-content w-screen pt-16"
+        style="background-color: #0e1015;display: inline-block;margin-top: 3%;"
+      >
+      `
+      </section>
+      
+      <section class="card-sec w-screen" style="background-color: #0e1015">
+        <div
+          class="card-heading w-screen text-4xl pr-7 pl-7 xl:text-8xl xl:pr-32 xl:pl-32 lg:text-7xl lg:pr-28 lg:pl-28 md:text-6xl md:pr-24 md:pl-24 sm:text-5xl sm:pr-20 sm:pl-20"
+         style="padding-top: 2%;">
+          <h2
+            class="text-white"
+            style="
+              font-family: 'Anton', sans-serif;
+              font-style: normal;
+              font-weight: 200;
+              text-align: center;
+            "
+          >
+            DIVYESH IS AN AWARD-WINNING DESIGNER
+          </h2>
+        </div>
+        <div class="card-sec xl:m-20 md:m-16 md:m-10 m-3 mt-7" id="services-id" style="padding-top: 5%;">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div>
+              <div
+                class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
+              >
+                <div class="card-top-icon w-100 flex justify-start p-4">
+                  <img src="static/image/card-part.svg" alt="////" />
+                </div>
+                <div class="card-center-com xl:h-36 lg:h-28 md:h-32 h-28"><h2 class="text-white font-medium" style="TEXT-ALIGN: CENTER;
+                  DISPLAY: FLEX;
+                  JUSTIFY-CONTENT: CENTER;
+                  ALIGN-ITEMS: center;
+                  FONT-SIZE: 35PX;
+                  FONT-WEIGHT: BOLDER;">GRAPHIC <br />DESIGN</h2></div>
+                <div
+                  class="card-bottom-component w-100 flex justify-between items-center p-4"
+                >
+                  <h2 class="text-white font-medium">GRAPHIC <br />DESIGN</h2>
+                  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1Ivs-_9O-7ubvqaKotOdKRWQ6PXjNkAx-?usp=drive_link"
+                    class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
+                  >
+                    Explore Work
+                  </a> -->
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
+              >
+                <div class="card-top-icon w-100 flex justify-start p-4">
+                  <img src="static/image/card-part.svg" alt="////" />
+                </div>
+                <div class="card-center-com xl:h-36 lg:h-28 md:h-32 h-28"><h2 class="text-white font-medium" style="TEXT-ALIGN: CENTER;
+                  DISPLAY: FLEX;
+                  JUSTIFY-CONTENT: CENTER;
+                  ALIGN-ITEMS: center;
+                  FONT-SIZE: 35PX;
+                  FONT-WEIGHT: BOLDER;">LOGO <br />DESIGN</h2></div>
+                <div
+                  class="card-bottom-component w-100 flex justify-between items-center p-4"
+                >
+                  <h2 class="text-white font-medium">LOGO<br />DESIGN</h2>
+                  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1Ivs-_9O-7ubvqaKotOdKRWQ6PXjNkAx-?usp=drive_link"
+                    class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
+                  >
+                  Explore Work
+                  </a> -->
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div
+                class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
+              >
+                <div class="card-top-icon w-100 flex justify-start p-4">
+                  <img src="static/image/card-part.svg" alt="////" />
+                </div>
+                <div class="card-center-com xl:h-36 lg:h-28 md:h-32 h-28"><h2 class="text-white font-medium" style="TEXT-ALIGN: CENTER;
+                  DISPLAY: FLEX;
+                  JUSTIFY-CONTENT: CENTER;
+                  ALIGN-ITEMS: center;
+                  FONT-SIZE: 35PX;
+                  FONT-WEIGHT: BOLDER;">PACKAGING <br />DESIGN</h2></div>
+                <div
+                  class="card-bottom-component w-100 flex justify-between items-center p-4"
+                >
+                  <h2 class="text-white font-medium">PACKAGING<br />DESIGN</h2>
+                  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1Ivs-_9O-7ubvqaKotOdKRWQ6PXjNkAx-?usp=drive_link"
+                    class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
+                  >
+                    Explore Work
+                  </a> -->
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
+              >
+                <div class="card-top-icon w-100 flex justify-start p-4">
+                  <img src="static/image/card-part.svg" alt="////" />
+                </div>
+                <div class="card-center-com xl:h-36 lg:h-28 md:h-32 h-28"><h2 class="text-white font-medium" style="TEXT-ALIGN: CENTER;
+                  DISPLAY: FLEX;
+                  JUSTIFY-CONTENT: CENTER;
+                  ALIGN-ITEMS: center;
+                  FONT-SIZE: 35PX;
+                  FONT-WEIGHT: BOLDER;">SOCIAL MEDIA <br />POST</h2></div>
+                <div
+                  class="card-bottom-component w-100 flex justify-between items-center p-4"
+                >
+                  <h2 class="text-white font-medium">SOCIAL MEDIA<br />POST</h2>
+                  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1Ivs-_9O-7ubvqaKotOdKRWQ6PXjNkAx-?usp=drive_link"
+                    class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
+                  >
+                    Explore Work
+                  </a> -->
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
+              >
+                <div class="card-top-icon w-100 flex justify-start p-4">
+                  <img src="static/image/card-part.svg" alt="////" />
+                </div>
+                <div class="card-center-com xl:h-36 lg:h-28 md:h-32 h-28"><h2 class="text-white font-medium" style="TEXT-ALIGN: CENTER;
+                  DISPLAY: FLEX;
+                  JUSTIFY-CONTENT: CENTER;
+                  ALIGN-ITEMS: center;
+                  FONT-SIZE: 35PX;
+                  FONT-WEIGHT: BOLDER;">BRANDING</h2></div>
+                <div
+                  class="card-bottom-component w-100 flex justify-between items-center p-4"
+                >
+                  <h2 class="text-white font-medium">BRANDING</h2>
+                  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1Ivs-_9O-7ubvqaKotOdKRWQ6PXjNkAx-?usp=drive_link"
+                    class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
+                  >
+                    Explore Work
+                  </a> -->
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="card h-auto max-w-full rounded-lg border-gray-500 border glowing-card"
+              >
+                <div class="card-top-icon w-100 flex justify-start p-4">
+                  <img src="static/image/card-part.svg" alt="////" />
+                </div>
+                <div class="card-center-com xl:h-36 lg:h-28 md:h-32 h-28"><h2 class="text-white font-medium" style="TEXT-ALIGN: CENTER;
+                  DISPLAY: FLEX;
+                  JUSTIFY-CONTENT: CENTER;
+                  ALIGN-ITEMS: center;
+                  FONT-SIZE: 35PX;
+                  FONT-WEIGHT: BOLDER;">POSTER <br />DESIGN</h2></div>
+                <div
+                  class="card-bottom-component w-100 flex justify-between items-center p-4"
+                >
+                  <h2 class="text-white font-medium">POSTER<br />DESIGN</h2>
+                  <!-- <a target="_blank" href="https://drive.google.com/drive/folders/1Ivs-_9O-7ubvqaKotOdKRWQ6PXjNkAx-?usp=drive_link"
+                    class="di text-gray-400 border border-gray-400 rounded-2xl p-1 pr-2 pl-2"
+                  >
+                    Explore Work
+                  </a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section
+        class="banner-rolling w-screen pb-32 text-white"
+        style="
+          font-family: 'Anton', sans-serif;
+          font-style: normal;
+          font-weight: 200;margin-top: 15%;
+        "
+      >
+      <p class="lets-talk-custom anton-xl text-max-size text-center" style="
+      font-size: 70px;
+    ">
+        SKILLS AND TOOLS
+      </p>
+        <div
+          class="rolling-banners mt-28 border border-r-0 border-l-0 p-1 sm:p-2"
+        >
+        
+          <div class="scroller" data-speed="fast">
+            <ul
+              class="tag-list scroller__inner xl:text-6xl xl:p-5 lg:text-5xl lg:p-4 md:text-4xl md:p-3 sm:text-3xl sm:p-2 p-1 text-xl"
+            >
+              
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">POSTER DESIGN</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">PACKAGING DESIGN</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>              
+              <li class="pr-10 flex justify-center items-center">LOGO DESIGN</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">
+                VISUAL DESIGN
+              </li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">PACKAGING DESIGN</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">
+                SOCIAL MEDIA POSTS
+              </li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">DIGITAL MARKETING</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">VIDEO EDITING</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">BRANDING</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">POSTER DESIGN</li>
+            </ul>
+          </div>
+        </div>
+        
+        
+        <div
+          class="rolling-banners mt-28 border border-r-0 border-l-0 p-1 sm:p-2"
+        style="margin-top:0px !important;">
+        
+          <div class="scroller" data-speed="fast">
+            <ul
+              class="tag-list scroller__inner xl:text-6xl xl:p-5 lg:text-5xl lg:p-4 md:text-4xl md:p-3 sm:text-3xl sm:p-2 p-1 text-xl"
+            >
+            <li class="pr-10 flex justify-center items-center">
+              <img
+                class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                src="static/image/dsddsdfdfsd.svg"
+              />
+            </li>
+              <li class="pr-10 flex justify-center items-center">DAVINCI RESOLVE</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">ADOBE PHOTOSHOP</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">FIGMA</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">ADOBE ILLUSTRATOR</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">ADOBE PREMIER PRO</li>
+            </ul>
+          </div>
+
+          <div
+          class="rolling-banners mt-28 border border-r-0 border-l-0 p-1 sm:p-2"
+        style="margin-top:0px !important;">
+        
+          <div class="scroller" data-speed="fast">
+            <ul
+              class="tag-list scroller__inner xl:text-6xl xl:p-5 lg:text-5xl lg:p-4 md:text-4xl md:p-3 sm:text-3xl sm:p-2 p-1 text-xl"
+            >
+            <li class="pr-10 flex justify-center items-center">
+              <img
+                class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                src="static/image/dsddsdfdfsd.svg"
+              />
+            </li>
+              <li class="pr-10 flex justify-center items-center">USER RESEARCH</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">USER FLOW</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">WIREFRAMING</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">VISUAL DESIGNS</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">COLOR THEORY</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">TYPOGRAPHY</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">INFORMATION ARCHITECTURE</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">PROTOTYPING</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">USABILITY TESTING</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">HTML</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">CSS</li>
+              <li class="pr-10 flex justify-center items-center">
+                <img
+                  class="h-14 xl:h-20 lg:h-14 md:h-12 sm:h-10 h-8"
+                  src="static/image/dsddsdfdfsd.svg"
+                />
+              </li>
+              <li class="pr-10 flex justify-center items-center">JAVASCRIPT</li>
+            </ul>
+          </div> 
+        </div>
+        <!--this script for horizontal keyframe scrolling-->
+        <script src="src/scroll_keyframe.js"></script>
+
+        
+          <!--this script for horizontal keyframe scrolling-->
+          <script src="src/scrol_keyframe2.js"></script>
+        </div>
+
+        <!--this script for horizontal keyframe scrolling-->
+        <script src="src/scroll_keyframe.js"></script>
+      </section>
+
+      <!--this script for smooth scrolling-->
+      <script src="src/smothscroll.js">
+        //for smoth scrolling
+      </script>
+
+      
+      
+        <div class="div-heading-sec-letstalk text-white mt-10">
+          <p class="lets-talk-custom anton-xl text-max-size text-center" style="font-size: 170px;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;">
+            LET'S TALK
+          </p>
+        </div>
+<!--         <div class="rotating-img">
+          <div class="for-absolute">
+            <div
+              class="star-icon-rotate flex justify-center"
+              style="width: 100%"
+            >
+              <img
+                src="static/image/star-2.svg"
+                alt=""
+                class="animate-spin slow-spin h-28 sm:h-36 md:h-40 lg:h-52 xl:h-60"
+              />
+            </div>
+          </div>
+        </div> -->
+        <div class="lets-talk-bottom mt-10 md:pr-7 md:pl-7" id="contact-id">
+          <div
+            class="text-white md:flex md:justify-between text-center poppins-medium"
+          style='padding-top:30px; padding-bottom:35px'>
+            <p>START A PROJECT<br />DIVYESHR312@GMAIL.COM<br />8320072230</p>
+            <p style='padding-top: 20px;
+    padding-bottom: 5px;'>OPEN TO WORK INVOLVING <br />GRAPHICS, POSTER DESIGN, LOGO DESIGN, PACKAGING<br />SOCIAL MEDIA POST, BRANDING</p>
+            <p class="mt-5">
+              SURAT, GUJARAT<br />INDIA
+            </p>
+          </div>
+        </div>
+      
+    </main>
+    <footer class="md:mt-32">
+      <div class="footer-nav-bar md:pr-10 md:pl-10 mt-20 mb-10 text-sm">
+        <div class="footer-nav text-white md:flex md:justify-between">
+          <div class="div1 poppins-medium text-center md:text-left mb-10">
+            <a href="https://rathoddivyesh.github.io/rd.me/" class="glowing-text">POWERED BY DIVYESH</a>
+          </div>
+          <div class="div1 poppins-medium text-center md:text-left mb-10">
+            <a target="_blank" href="https://dribbble.com/divyeshrathod" class="glowing-text">DRIBBLE</a>
+          </div>
+          <div class="div1 poppins-medium text-center md:text-left mb-10">
+            <a target="_blank" href="https://www.behance.net/divyeshrathod541" class="glowing-text">BEHANCE</a>
+          </div>
+          <div class="div1 poppins-medium text-center md:text-left mb-10">
+            <a target="_blank" href="https://www.linkedin.com/in/rathoddivyesh/" class="glowing-text">LINKEDIN</a>
+          </div>
+          <div class="div1 poppins-medium text-center md:text-left mb-10">
+            <a target="_blank" href="https://instagram.com/divyesh.b.rathod" class="glowing-text">INSTAGRAM</a>
+          </div>
+          <div
+            class="div3 poppins-medium text-center md:text-left mt-10 md:mt-0"
+          >
+            <a target="_blank" href="https://github.com/rathoddivyesh" class="glowing-text">GITHUB</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $(".hamb-icon").click(function () {
+          $(".mobile-menu").slideToggle();
+        });
+      });
+      
+
+    </script>
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+  </body>
+</html>
