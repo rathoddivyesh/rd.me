@@ -1,0 +1,148 @@
+.first-banner{
+    font-size: 100px;
+}
+.footer
+{
+    margin-top:-8% !important;
+}
+@media only screen and (min-width: 600px) {
+  .footer
+{
+    margin-top:-8% !important;
+}
+}
+@media only screen and (max-width: 600px) {
+  .footer
+{
+    margin-top:0% !important;
+}
+}
+.mt-20 {
+    margin-top: 0rem !important;
+}
+
+.tab {
+    color: #7b7b7b;
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    /* background-color: #f1f1f1; */
+    width: fit-content;
+    margin: auto;
+}
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    /* background-color: #ccc; */
+    color: white;
+}
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    color: white !important;
+  }
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /* border: 1px solid #ccc; */
+    border-top: none;
+    color: white;
+  }
+  .portfolionew{
+    width: 90%;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 5%;
+  }
+
+  @media (min-width: 1280px) {
+    .xl\:p-40 {
+        padding: 0rem;
+    }
+  }
+  .item img{
+    float: left;
+    padding: 0px 15px;
+    margin-bottom: 3%;
+  }
+  @media only screen and (max-width: 600px) {
+    .item img
+    {
+      width: 100%;
+    }
+    .tab{
+      DISPLAY: grid;
+    }
+  }
+  .landing-slo.w-screen.md\:flex.justify-between.md\:pr-8.md\:pl-8.md\:pb-8 {
+    align-items: center;
+}
+.text-white.md\:flex.md\:justify-between.text-center.poppins-medium {
+  ALIGN-ITEMS: CENTER;
+}
+.item-child
+{
+  width: 50%;
+}
+.item-child-side
+{
+  width: 50%;
+    margin-left: 8%;
+}
+.item-content
+{
+  display: flex;
+}
+.item-side h2{
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 3%;
+}
+.item-side a{
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 4%;
+  color: #df8247;
+}
+.item-side a:hover{
+  color: white;
+}
+.item-child-side-lt
+{
+  width: 50%;
+    margin-right: 8%;
+}
+@media only screen and (max-width: 600px) {
+  .item-content{
+    margin-top: 5%;
+    display: inline-block;
+    text-align: center;
+  }
+  .item-child{
+    display: inline;
+  }
+  .item-side h2,h3
+  {
+    display: none;
+  }
+  .item-child-side {
+    width: 100%;
+    margin: 0px;
+}
+.item-side{
+  display: none;
+}
+}
